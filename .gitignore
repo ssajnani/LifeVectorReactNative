@@ -1,0 +1,17 @@
+LifeVectorMobile/node_modules
+LifeVectorMobile/android/app/build
+LifeVectorMobile/android/.gradle
+.idea/
+LifeVectorMobile/package-lock.json
+LifeVectorServer/gatt-server/autom4te*
+LifeVectorServer/gatt-server/config.log
+LifeVectorServer/gatt-server/config.status
+LifeVectorServer/gatt-server/src/.deps
+LifeVectorServer/gatt-server/src/libggk*
+LifeVectorServer/.deps
+LifeVectorServer/.dirstamp
+LifeVectorServer/libggk*
+LifeVectorServer/gatt-server/src/standalone*
+*.o
+*.json
+!spec/*.json
