@@ -22,6 +22,7 @@ Run 'react-native link'
 ### Step 6: 
 Run 'react-native run-android'
 
+((Project))
 
 
 
