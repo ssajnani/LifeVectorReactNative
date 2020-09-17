@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+    <!--< Only if you're using GCM or localNotificationSchedule() > -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <permission
             android:name="${applicationId}.permission.C2D_MESSAGE"

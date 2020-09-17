@@ -73,8 +73,13 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-    entryFile: "index.js"
+    entryFile: "index.js",
+    enableHermes: true
 ]
+
+def jscFlavor = 'org.webkit:android-jsc:+'
+
+def enableHermes = project.ext.react.get("enableHermes", false);
 
 apply from: "../../node_modules/react-native/react.gradle"
 
@@ -139,6 +144,7 @@ android {
 }
 
 dependencies {
+    implementation project(':@react-native-community_async-storage')
     compile project(':react-native-charts-wrapper')
     compile project(':react-native-ble-manager')
     compile project(':react-native-spinkit')
@@ -150,6 +156,17 @@ dependencies {
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation project(':react-native-charts-wrapper')
+    if (enableHermes) {
+
+      // for RN 0.61+
+      def hermesPath = "../../node_modules/hermes-engine/android/";
+
+
+      debugImplementation files(hermesPath + "hermes-debug.aar")
+      releaseImplementation files(hermesPath + "hermes-release.aar")
+    } else {
+      implementation jscFlavor
+    }
 }
 
 // Run this once to be able to run the application with BUCK

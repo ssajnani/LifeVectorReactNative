@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Dimensions from 'Dimensions';
-import {StyleSheet, View, TextInput, Image} from 'react-native';
+import {Dimensions, StyleSheet, View, TextInput, Image} from 'react-native';
 
 export default class UserInput extends Component {
     render() {
