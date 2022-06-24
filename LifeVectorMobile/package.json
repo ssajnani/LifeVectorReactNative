@@ -16,7 +16,7 @@
     "babel-preset-react-native": "^4.0.0",
     "convert-string": "^0.1.0",
     "gensync": "^1.0.0-beta.1",
-    "hermes-engine": "0.5.1",
+    "hermes-engine": "0.11.0",
     "jsc-android": "^241213.1.0",
     "metro-react-native-babel-preset": "^0.63.0",
     "node-forge": "^0.10.0",
